@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff ;
+    position: relative;
+    z-index: 1;
+    padding: 1em 0;
+    width: 100%;
+    margin: 0 auto; 
+}
+.position{
+    margin-left: 140px;
+}
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+}
+.btn{
+    text-decoration: none;
+    border: 1px solid transparent;
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    color:#fff;
+    padding: 12px 0;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center; 
+}
+.main-header .btn{
+    margin-right: 8rem;
+    width: 12%;
+}
+.nav-bar li{
+    padding: 0 15px;
+    list-style: none;
+    font-weight: 300;
+}
+ul a{
+    text-decoration: none;
+    color:hsl(233, 8%, 62%);
+    font-size: 15px;
+}
+/*End of The nav bar*/
+
+.showcase{
+    background-color:  hsl(0, 0%, 98%);
+    display: flex;
+    justify-content: space-between;
+}
+.showcase-bg{
+    background-image: url(/images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position:  -2rem -17rem;
+    margin-bottom: -18rem;
+}
+.showcase-text{
+    transform: translateY(11rem);
+}
+.showcase h1{
+    font-size: 52px;
+    font-weight:400;
+    width: 100%;
+    color:hsl(233, 26%, 24%);
+}
+.showcase a{
+    position: absolute;
+    top: 245px;
+}
+.showcase p{
+    width: 100%;
+    line-height: 1.4;
+    padding-top: 30px;
+    color:hsl(233, 8%, 62%);
+    font-size: 18px;
+    font-weight: 300;
+}
+.showcase .btn{
+    margin-top: 1rem;
+    width: 35%;
+}
+.phones{
+    position: relative;
+    bottom: 8rem;
+    overflow: hidden;
+}
+/*End of The Showcase (first section)*/
+
+.why-us{
+    background-color: hsl(220, 16%, 96%);
+}
+.section-title{
+    padding-top: 5rem;
+    font-size: 40px;
+    color:hsl(233, 26%, 24%);
+    font-weight:400;
+}
+.sub-head{
+    padding-top: 25px;
+    color:hsl(233, 8%, 62%);
+    width: 60%;
+    line-height: 1.5;
+    font-size: 19.5px;
+}
+.boxes-1{
+    padding-top: 170px;
+    display: flex;
+    flex-direction: row;
+    transform: translate(0rem,-6rem);
+}
+.box-1{
+    width:50%;
+    margin: 0 1rem;
+}
+.first-child{
+    margin-left: 0;
+}
+.box-1 h3{
+    font-weight: 400 ;
+    padding:30px 0 25px 0 ;
+    color:hsl(233, 26%, 24%);
+    font-size: 21px;
+}
+.box-1 p{
+    line-height: 1.7;
+    font-size: 16px;
+     color:hsl(233, 8%, 62%);
+}
+/*End of The Why Us (second section)*/
+.latest-articles{
+    background-color:  hsl(0, 0%, 98%);  
+    padding-bottom: 5rem;
+ }
+ .latest-articles h1{
+     padding-bottom: 50px;    
+ }
+.boxes-2{
+     display: flex;
+     flex-direction: row;
+     align-items: baseline;
+     transform: translateX(-1em) ;
+ }
+.box-2{
+    width: 22%;
+    margin-left: 20px;
+    background-color: #fff;
+    border-radius: 1rem;
+    transition: transform 0.2s;
+ }
+ .box-2:hover{
+    transform: scale(1.07)
+}
+ .box-2 img{
+    width: 100%;
+    border-radius: 0.5rem; 
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.box-2 .money{
+    height: 180px;
+}
+.single{
+    padding: 1.8rem 0 2rem 1.4em;
+}
+.single .authors{
+    font-size: 10px;
+    font-weight: 300;
+    color: hsl(233, 26%, 24%);
+    padding-bottom: 1.2em
+    
+}
+.single .title{
+    font-weight: 400;
+    font-size: 16px;
+    width: 90%;
+    color: hsl(233, 26%, 24%);
+} 
+.single p{
+    font-size: 13px;
+    font-weight: 300;
+    color: hsl(233, 8%, 62%);
+    padding-top: 0.7rem;
+    width: 90%;
+    line-height: 1.4;
+}
+.fourth{
+    position: relative;
+    animation: fourth ;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+}
+@keyframes fourth {
+    0%{right:10000px;}
+    100%{right:0;}
+}
+.third{
+    position: relative;
+    animation: third ;
+    animation-duration: 2.4s; 
+    animation-fill-mode: forwards;
+}
+@keyframes third {
+    0%{right:5000px;}
+    100%{right:0;}
+}
+.second{
+    position: relative;
+    animation: second ;
+    animation-duration: 2.8s; 
+    animation-fill-mode: forwards;
+}
+@keyframes second {
+    0%{right:2000px;}
+    100%{right:0;}
+}
+.first{
+    position: relative;
+    animation: first ;
+    animation-duration: 2.95s; 
+    animation-fill-mode: forwards;
+}
+@keyframes first {
+    0%{right:1000px;}
+    100%{right:0;}
+}
+/*End of The Latest Articles (third section)*/
+footer{
+    background-color: hsl(233, 26%, 24%);
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+footer ul{
+    margin-top: 0.8rem;
+}
+footer ul li{
+    list-style: none;
+    padding-bottom: 1.2rem;
+    margin-right: 3rem;
+}
+footer ul a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+.svg{
+    margin-left: 9.5rem; 
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3.5rem;
+    transform: translateX(-10px);
+}
+.icons img{
+    padding: 0 0.5rem;
+}
+.end {
+    transform: translateY(1.5rem);
+}
+.end p{
+    transform: translate(-5rem,3rem);
+    color: hsl(233, 8%, 62%);
+    font-weight: 300;
+    font-size: 15px; 
+}
+.end a{
+    width: 100%;
+    padding: 12px 1.7rem;
+}

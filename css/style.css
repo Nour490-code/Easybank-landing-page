@@ -51,6 +51,9 @@ ul a{
     color:hsl(233, 8%, 62%);
     font-size: 15px;
 }
+.hamburger-menu{
+    display: none;
+}
 /*End of The nav bar*/
 
 .showcase{
@@ -281,4 +284,68 @@ footer ul a{
 .end a{
     width: 100%;
     padding: 12px 1.7rem;
+}
+@media screen and (max-width: 575.98px){
+   .container{
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       width: 100vw;
+   }
+   .position{
+       margin-left: 0;
+   }
+    .main-header a{
+        display: none;
+    }
+    .main-header img{
+        margin-left: 2rem;
+    }
+    .hamburger-menu{
+        display: block; 
+        transform: translateX(-2.5rem);
+    }
+    
+    .showcase-bg{
+       background-image: url(../images/bg-intro-mobile.svg);
+       transform: translate(-22.5rem,0);
+       background-position: 0 0;
+    }
+    .scale{
+        transform: scale(0.42,0.45);
+        width: 100vw;
+    }
+    .phones{
+        transform: translate(-12rem,-45rem)
+        
+    }
+    .showcase-text{
+        margin-top: 12rem;
+    }
+    .showcase-text h1{
+       width: 100vw;
+       font-size: 36px;
+    }
+    .showcase-text p{
+        width: 94%;
+        line-height: 1.6;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    .showcase .btn{
+        transform: translate(-5rem,-2.5rem);
+        width: 45%; 
+    }
+    .why-us{
+        display: none;
+    }
+    .latest-articles{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .attribution{
+        display: none;
+    }
 }

@@ -285,6 +285,20 @@ footer ul a{
     width: 100%;
     padding: 12px 1.7rem;
 }
+.attribution{
+    padding: 0.5rem 0;
+    color: #ffffff;
+    background-color: hsl(233, 26%, 24%);
+    margin-top: -1rem;
+    border-top: hsl(0, 0%, 98%) solid 0.2px;
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+} 
+.attribution a:hover{
+    color: hsl(180, 1%, 75%);
+}
 @media screen and (max-width: 575.98px){
    .container{
        text-align: center;
@@ -305,22 +319,21 @@ footer ul a{
         display: block; 
         transform: translateX(-2.5rem);
     }
-    
+    .showcase{
+        flex-direction: column;
+    }
     .showcase-bg{
        background-image: url(../images/bg-intro-mobile.svg);
-       transform: translate(-22.5rem,0);
-       background-position: 0 0;
-    }
-    .scale{
-        transform: scale(0.42,0.45);
-        width: 100vw;
+       transform: translate(0,-11.8rem);
+       background-position: 0rem -3.5rem;
+       margin-bottom: 4rem;
     }
     .phones{
-        transform: translate(-12rem,-45rem)
-        
+        transform: translateY(12px);
+        width: 90%;    
     }
     .showcase-text{
-        margin-top: 12rem;
+        transform: translateY(19rem);
     }
     .showcase-text h1{
        width: 100vw;
@@ -337,15 +350,80 @@ footer ul a{
         width: 45%; 
     }
     .why-us{
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
-    .latest-articles{
-        display: none;
+    .section-title{
+        font-size: 30px;
     }
-    footer{
-        display: none;
+    .why-us h1{
+        width: 90%;
+        margin-left: 1rem;
+        padding-top: 4rem;
     }
-    .attribution{
-        display: none;
+    .sub-head{
+        width: 95%;
+        line-height: 1.6;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .why-us p{
+        font-size: 17px;
+    }
+    .boxes-1{
+        flex-direction: column;
+        transform: translateY(-7rem);
+    }
+    .box-1 {
+        width: 100%;
+        margin: 0 0;
+        margin-bottom: 2rem;
+    }
+    .boxes-2{
+        flex-direction: column;
+        transform: translateX(1.2rem);
+        width: 90%;
+    }
+    .box-2{
+        width: 100%;
+        margin: 0 0 1.5rem 0 ;
+        text-align: left;
+    }
+    .first{
+        animation-duration: 2s;
+    }
+    .second{
+        animation-duration: 2.4s;
+    }.third{
+        animation-duration: 2.8s;
+    }.fourth{
+        animation-duration: 2.95s;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .svg{
+        margin-left: 0;
+    }
+    .icons{
+        padding-top: 1.7rem;
+        transform: translateX(5.5rem);
+        width: 75%;
+    }
+    footer ul{
+        margin-left: 2.5rem;
+    }
+    .first-ul{
+        margin-top: 2.5rem;
+    }
+    .second-ul{
+        margin-top: -0.4rem;
+    }
+    .end a{
+        margin-right: 0.5rem;
+    }
+    .end p{
+        transform: translate(0,0);
+        margin: 2.5rem 0 1.5rem 0;
     }
 }
